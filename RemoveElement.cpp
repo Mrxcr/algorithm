@@ -30,6 +30,8 @@ int RemoveEle(vector<int> &nums, int val){
 }
 
 // 双指针法（快慢指针法）： 通过一个快指针和慢指针在一个for循环下完成两个for循环的工作
+// 快指针：for循环
+// 慢指针：需要更新的index
 int RemoveEle2(vector<int> &nums, int val){
     int slowPt = 0;
     for (int fastPt = 0; fastPt < nums.size(); fastPt ++){
@@ -38,6 +40,7 @@ int RemoveEle2(vector<int> &nums, int val){
             slowPt++;
         }
     }
+    return slowPt;
 }
 
 int main(void){
