@@ -68,7 +68,7 @@ int binarySearchInsertion(vector<int> & nums, int target){
 
 int main(void){
     vector<int> a = {1, 2, 6, 8, 12, 15, 15, 15, 15, 23, 26, 31, 35};
-    int res = binarySearchInsertion(a, 16);
+    int res = binarySearchInsertion(a, 40);
     cout << res << endl;
     return 0;
 }
